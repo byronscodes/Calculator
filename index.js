@@ -17,12 +17,18 @@ function clearDisplay(){
 function calculate(){
     try{
         let longEval = eval(display.value);
-    }
+        if (longEval.toString().length > 10) {
+            longEval = parseFloat(longEval.toPrecision(10));
+        }
+        display.value = longEval;
+    } 
     catch(error){
-        longEval = "Error";
+        display.value = "Error";
     }
-    if (longEval.toString().length > 10) {
-        longEval = parseFloat(longEval.toPrecision(10));
-    }
-    display.value = longEval;
+
 }
+
+function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
