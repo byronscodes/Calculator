@@ -4,20 +4,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    background-color: linear-gradient(to right, rgb(229, 146, 38), rgb(193, 250, 6))
 }
 #calculator{
-    font-family: Arial, sans-serif;
+    font-family: Gotham Rounded, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
 }
 #display{
-    width: 100%;
+    width: 92%;
     padding: 20px;
     font-size: 5rem;
-    text-align: left;
+    text-align: right;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
